@@ -1,0 +1,68 @@
+html, body {
+  max-width: 1000px;
+  margin: auto; 
+}
+
+.image1 {
+    float: right;
+    width: 300px;
+}
+#image2 {
+    float: right;
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    margin: 0px 20px 0px 20px;
+}
+#hLine1 { 
+  width: 100%;
+  margin-bottom: 20px; 
+}
+
+.table { min-height: 50%; }
+
+.colH { text-align: center; }
+
+.col1 {
+  background-color: green;
+  color: white;
+  width: 150px;
+  vertical-align: top;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col2 {
+  min-width: 300px;
+  border-style: solid;
+  border-width: 3px;
+  padding: 0px 10px 0px 10px;
+}
+.aboutMe {
+  text-align: justify;
+}
+
+.col3 {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  vertical-align: top;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.footer {
+  border-style: dashed;
+  border-color: green;
+  border-width: 5px;
+  padding-bottom: 75px;
+  vertical-align: top;
+    
+}
+
+
+
+
+

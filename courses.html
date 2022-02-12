@@ -1,0 +1,71 @@
+<html lang="en-US">
+   <head>
+    <link rel="stylesheet" type="text/css" href="assign1.css">
+       <title>
+          Courses
+       </title>
+   </head>
+   <body>
+      <h1>
+         Courses
+      </h1>
+      <hr>
+      <form>
+       <h3>Course Add Form</h3>
+       <div>
+         <label for="course_name">Course Name</label>
+         <input type="text" id="course_name" name="course_name">
+       </div>
+       <br>
+       <div>
+         <label for="course_num">Course Number</label>
+         <input type="text" id="course_num" name="course_num">
+       </div>
+       <br>
+       <div>
+         <label for="description">Description</label>
+         <textarea id="description" name="description" rows="5" cols="30">
+         </textarea>
+       </div>
+       <br>
+       <div>
+         <label for="final_grade">Final Grade</label>
+         <input type="text" id="final_grade" name="final_grade">
+       </div>
+       <br>
+       <div>
+         <label for="currently_enrolled">Currently Enrolled?</label>
+         <input type="checkbox" id="currently_enrolled" name="currently_enrolled" value="1">
+       </div>
+       <br>
+       <div>
+         <input type="submit" value="Add Course">
+       </div>
+
+     </form>
+     <br>
+     <br>
+     <h3>Enrolled</h3>
+      <table>
+          <tr>
+              <th>Course name</th>
+              <th>Course number</th>
+              <th>Description</th>
+              <th>Final grade</th>
+          </tr>
+          
+          <tr>
+              <td>Cloud Computing</td>
+              <td>CS 48443</td>
+              <td>
+                <p>
+                  Introduces amazon web services
+                </P>
+              </td>
+              <td>100</td>
+          </tr>
+      </table>
+      <br>
+      <a href="index.html">Back to Home Index</a>
+   </body>
+</html>
