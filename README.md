@@ -97,7 +97,6 @@ What is S3?
 Amazon S3 allows the storage of objects (files) in forms of buckets.
 Buckets must have a name that is globally unique are defined at the region level.
 The Naming convention requires the following: No uppercase, No underscore, 3-63 characters long, Not an IP.
-![image](https://user-images.githubusercontent.com/68451169/153739240-f9087722-3563-4084-8aed-1f6569479581.png)
 
 1. Create an S3 bucket.
     a. Search for S3 on AWS search and go to S3 page. This pag shows all your S3 buckets that you have created
