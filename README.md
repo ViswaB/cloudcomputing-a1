@@ -23,7 +23,7 @@
 </details>
 
 ## Project Link
-d3vxajs6ef6xy9.cloudfront.net
+https://d3vxajs6ef6xy9.cloudfront.net
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
