@@ -23,7 +23,7 @@
 </details>
 
 ## Project Link
-http://d2515v51pc8j0d.cloudfront.net/
+d3vxajs6ef6xy9.cloudfront.net
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -92,13 +92,16 @@ that displays my name, and has links to 5 other pages, one of which includes som
 
 <!-- Instructions -->
 ## Instructions
-### S3
-What is S3?
-Amazon S3 allows the storage of objects (files) in forms of buckets.
-Buckets must have a name that is globally unique are defined at the region level.
-The Naming convention requires the following: No uppercase, No underscore, 3-63 characters long, Not an IP.
-
-1. Create an S3 bucket.
+1. Make sure you are signed in as IAM user, and not root user, as it is a secure practice to work as IAM user, and should not use or share root user as it is not a good practice
+   and unsecure.
+   
+#### S3 
+2. Create an S3 bucket.
+    What is S3?
+    Amazon S3 allows the storage of objects (files) in forms of buckets.
+    Buckets must have a name that is globally unique are defined at the region level.
+    The Naming convention requires the following: No uppercase, No underscore, 3-63 characters long, Not an IP.
+    
     a. Search for S3 on AWS search and go to S3 page. This pag shows all your S3 buckets that you have created
     ![image](https://user-images.githubusercontent.com/68451169/153739102-33a3d2a3-fc2e-478a-827f-fe5e5eedcfdb.png)
     
@@ -106,19 +109,39 @@ The Naming convention requires the following: No uppercase, No underscore, 3-63 
     bucket can be left as default.
     Once this is done, click create at the bottom of the page.
     ![image](https://user-images.githubusercontent.com/68451169/153739117-f437a099-253a-4b55-8f4d-ce1b14c49a29.png)
- 
     
     c. You will now see the bucket you created in the main S3 page. click on it. Here you'll see an option to upload your files. For the purpose project I uploaded 5 html pages,        2 image file, one video, and 1 css styling sheet. S3 is very useful when creating a webpage using HTML, CSS and Javascript.
-2. dfghgfhg
-3. ffhfgh
-4. 
-### CloudFront  
-What is CloudFront?
-    
-
+3. S3 bucket allows for versioning of files where you can upload a file of same name more than once and the bucket will show the latest update upfront, but also it stores all
+   other uploads as different versions. It is best to version buckets, as it is easy to access or go back to a previous version, as well as restore a version if deleted
+   unintentionally. To use this feature, click on bucket and go to the "Properties" tab and select the edit option under Bucket versioning, select "enable" and save changes.
+4. The best practice is to not allow public access of buckets. Go to "Permissions" tab of your bucket and ensure that public access is blocked. Public access is blocked by
+   default is blocked when creating the bucket. There will be no direct link to access the site or contents of the S3 bucket, which leads to next step.
    
+#### CloudFront 
+5. Create a CloudFront Distribution
+   What is CloudFront?
+    CloudFront is a content delivery network (CDN) service of AWS. Since the S3 bucket is private, CloudFront helps in accessing the site as it works with both public and
+    private buckets. It cahes the content to imrove performance, and make it available fast and secure for the 200+ edge locations. It uses Origin Access Identity (OAI) which is
+    a feature of CloudFront that enhances security
+    
+    a. Search for cloud front in AWS. Go to the Cloud front page and click Create Distribution. 
+      ![image](https://user-images.githubusercontent.com/68451169/153740436-bfdd20e1-fe00-4408-a3f3-f3797dd3a29e.png)
+      
+    b. When clicking into the Origin Domain blank, a drop down menu pops up with your current S3 buckets, select the S3 bucket with the current projects' contents. This will auo
+       fill the rest of the distribution creation settings page. 
+       
+    c. Next take look at the S3 bucket access section of this page. Select "Yes use OAI". Then Create new OAI. And uncer bucket policy sub section of OAI, select Yes update the
+       bucket policy, which will automatically change the access permission of the S3 bucket, instead of the user having to manually update it. 
+    d. All other settings can be left to default. 
+    e. Scroll down to Default root object section, which is optional, but you can provide the name of file from S# bucket that you want to set as default. For the purpose of
+       this project I set index.html as default root page.
+    f. Leaving all other sections to its default settings, click Create Distribution at bottom of page. It takes a few minutes for the CloudFront distribution to deploy.
+6. Once the distribution is deployed, click on it, and under the General tab there is a Distribution Domain Name section under it a link to your S3 website. This is the main
+   link used to access the contents of S3 bucket. Enter the link in browser to ensure the website works as intended. The link for this project is provided in the top.
+   ![image](https://user-images.githubusercontent.com/68451169/153740718-145b19bc-185f-411a-8b28-84fbf27dbbf9.png)
 
-  
+7. Now this link can be shared for public access, while the S3 bucket is secure.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
