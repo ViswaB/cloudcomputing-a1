@@ -52,21 +52,39 @@ that displays my name, and has links to 5 other pages, one of which includes som
 
 ### Prerequisites
 
-Create an account in AWS -> https://aws.amazon.com/.
+1. Create an account in AWS for free using Free Tier-> https://aws.amazon.com/.
 ![image](https://user-images.githubusercontent.com/68451169/153737463-07b67189-4ebf-48c1-94a8-a78ab0022f9c.png)
-Create an IAM user and provide admin access. IAM is a service of AWS that 
 
+2. Once you have created a Free Tier account, and verified it, search for the service of IAM (Identity and Access Management Service) in the search bar of AWS.
+   What is IAM?
+    IAM is a service of AWS has for multiple users and group users of same account 
+    because the root account should not used or shares for security purposes. IAM is a global service therefore does not need region selection, and in the service users, who are     people within an organization, can be grouped into not just one but miltiple groups, although not required to. 
+    
+3. Create an IAM user and provide admin access. 
+      a. Once you click on IAM from search results, you'll be on the IAM service page. On the left there is a menu, labeled Dashboard. In this dashboard the first category is
+      Access management under it find the option "Users" and click on it, where you'll be taken to a page to create users. Click on Add users on top right. 
+      b. Provide a username, and next select "Password" under Select AWS access type, where you'll be provided with a few options. Either choose to autogenerate password, or
+      provide custom password, and choose whether or not to require a reset of password when IAM user login for the first time. For the purpose of this project it is required to       create an IAM user for yourself, so you can choose custome password and not require to reset it. Click next.
+      ![image](https://user-images.githubusercontent.com/68451169/153738844-6859c8a4-a214-429d-b33d-50f7cb769dd0.png)
+
+      c. Add user to group, by creating a group and including with policy "AdministratorAccess" as shown below. Click next. This takes you to add tags, which is not required.
+      Click next for review. Create user. The next page you'll see a confirmation for successfully creating user, and option to send email instructions. You can close this page
+      now. 
+      ![image](https://user-images.githubusercontent.com/68451169/153738972-5aae80ce-9163-44bb-aa60-0e772452958d.png)
+
+      d. Take note of the Account ID from your root account by clicking on your username on top right of root account. Then Sign out of root account. Sign into console using IAM
+      user. IAM sign in requires the Account ID, along with username and password of the IAM user provided during creation of the user. Now we have secured the project using IAM
+      policies. 
 
 ### Installation
 1. Install VScode -> https://code.visualstudio.com/, inorder to code in html and css, which will then be uploaded to the S3 bucket.
 
-Then follow the following steps by signing into your AWS console, and using its services.
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- USAGE EXAMPLES -->
+<!-- Instructions -->
 ## Instructions
 
 1. Create an S3 bucket.
