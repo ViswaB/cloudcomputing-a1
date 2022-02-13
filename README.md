@@ -55,6 +55,7 @@ that displays my name, and has links to 5 other pages, one of which includes som
 1. Create an account in AWS for free using Free Tier-> https://aws.amazon.com/.
 ![image](https://user-images.githubusercontent.com/68451169/153737463-07b67189-4ebf-48c1-94a8-a78ab0022f9c.png)
 
+#### IAM
 2. Once you have created a Free Tier account, and verified it, search for the service of IAM (Identity and Access Management Service) in the search bar of AWS.
    What is IAM?
     IAM is a service of AWS has for multiple users and group users of same account 
@@ -86,11 +87,27 @@ that displays my name, and has links to 5 other pages, one of which includes som
 
 <!-- Instructions -->
 ## Instructions
-
+### S3
 1. Create an S3 bucket.
-![image](https://user-images.githubusercontent.com/68451169/153737481-55af5915-4e8a-4f6f-89d8-53da3ce74646.png)
-  In this step, click on create bucket, and provide a globally unique name to the bucket. All other settings for creating a bucket can be left as default.
-  Once this is done, click create at the bottom of the page, 
+    a. Search for S3 on AWS search and go to S3 page. This pag shows all your S3 buckets that you have created
+    ![image](https://user-images.githubusercontent.com/68451169/153739102-33a3d2a3-fc2e-478a-827f-fe5e5eedcfdb.png)
+    
+    b. In this step, click on create bucket, and provide a globally unique name to the bucket. All other settings for creating a
+    bucket can be left as default.
+    Once this is done, click create at the bottom of the page.
+    ![image](https://user-images.githubusercontent.com/68451169/153739117-f437a099-253a-4b55-8f4d-ce1b14c49a29.png)
+ 
+    
+    c. You will now see the bucket you created in the main S3 page. click on it. Here you'll see an option to upload your files. For the purpose project I uploaded 5 html pages,        2 image file, one video, and 1 css styling sheet. S3 is very useful when creating a webpage using HTML, CSS and Javascript.
+2. dfghgfhg
+3. ffhfgh
+4. 
+### CloudFront   
+    
+
+   
+
+  
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
