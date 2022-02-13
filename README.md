@@ -29,7 +29,7 @@ http://d2515v51pc8j0d.cloudfront.net/
 ## About The Project
 
 This purose of this project is to demonstrate the knowledge of building a website and deploying it to the 
-cloud using AWS service of S3, and using CloudFront to speed up the content delivery globally. The website itself is very simple with a main page
+cloud using AWS service of S3, securing it with IAM policies, and using CloudFront to speed up the content delivery globally. The website itself is very simple with a main page
 that displays my name, and has links to 5 other pages, one of which includes some images, and another which includes a 30 sec video
 
 
