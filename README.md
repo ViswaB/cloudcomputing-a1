@@ -55,14 +55,14 @@ that displays my name, and has links to 5 other pages, one of which includes som
 ### Prerequisites
 
 #### AWS (Amazon Web Services)
-1. Create an account in AWS for free using Free Tier-> https://aws.amazon.com/.
-    What is AWS? 
+1. Create an account in AWS for free using Free Tier-> https://aws.amazon.com/.<br>
+      What is AWS?<br>
       AWS stands for Amazon web services and it is a fundamental cloud service used for cloud computing which offers a wide array of cloud-based products at a global scale
 ![image](https://user-images.githubusercontent.com/68451169/153737463-07b67189-4ebf-48c1-94a8-a78ab0022f9c.png)
 
 #### IAM
-2. Once you have created a Free Tier account, and verified it, search for the service of IAM (Identity and Access Management Service) in the search bar of AWS.
-   What is IAM?
+2. Once you have created a Free Tier account, and verified it, search for the service of IAM (Identity and Access Management Service) in the search bar of AWS.<br>
+   What is IAM?<br>
     IAM is a service of AWS has for multiple users and group users of same account 
     because the root account should not used or shares for security purposes. IAM is a global service therefore does not need region selection, and in the service users, who are     people within an organization, can be grouped into not just one but miltiple groups, although not required to. 
     
@@ -96,8 +96,8 @@ that displays my name, and has links to 5 other pages, one of which includes som
    and unsecure.
    
 #### S3 
-2. Create an S3 bucket.
-    What is S3?
+2. Create an S3 bucket.<br>
+    What is S3?<br>
     Amazon S3 allows the storage of objects (files) in forms of buckets.
     Buckets must have a name that is globally unique are defined at the region level.
     The Naming convention requires the following: No uppercase, No underscore, 3-63 characters long, Not an IP.
@@ -118,8 +118,8 @@ that displays my name, and has links to 5 other pages, one of which includes som
    default is blocked when creating the bucket. There will be no direct link to access the site or contents of the S3 bucket, which leads to next step.
    
 #### CloudFront 
-5. Create a CloudFront Distribution
-   What is CloudFront?
+5. Create a CloudFront Distribution.<br>
+   What is CloudFront?<br>
     CloudFront is a content delivery network (CDN) service of AWS. Since the S3 bucket is private, CloudFront helps in accessing the site as it works with both public and
     private buckets. It cahes the content to imrove performance, and make it available fast and secure for the 200+ edge locations. It uses Origin Access Identity (OAI) which is
     a feature of CloudFront that enhances security
@@ -132,10 +132,14 @@ that displays my name, and has links to 5 other pages, one of which includes som
        
     c. Next take look at the S3 bucket access section of this page. Select "Yes use OAI". Then Create new OAI. And uncer bucket policy sub section of OAI, select Yes update the
        bucket policy, which will automatically change the access permission of the S3 bucket, instead of the user having to manually update it. 
+       
     d. All other settings can be left to default. 
+    
     e. Scroll down to Default root object section, which is optional, but you can provide the name of file from S# bucket that you want to set as default. For the purpose of
        this project I set index.html as default root page.
+       
     f. Leaving all other sections to its default settings, click Create Distribution at bottom of page. It takes a few minutes for the CloudFront distribution to deploy.
+    
 6. Once the distribution is deployed, click on it, and under the General tab there is a Distribution Domain Name section under it a link to your S3 website. This is the main
    link used to access the contents of S3 bucket. Enter the link in browser to ensure the website works as intended. The link for this project is provided in the top.
    ![image](https://user-images.githubusercontent.com/68451169/153740718-145b19bc-185f-411a-8b28-84fbf27dbbf9.png)
