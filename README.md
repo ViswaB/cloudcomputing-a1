@@ -54,7 +54,10 @@ that displays my name, and has links to 5 other pages, one of which includes som
 
 ### Prerequisites
 
+#### AWS (Amazon Web Services)
 1. Create an account in AWS for free using Free Tier-> https://aws.amazon.com/.
+    What is AWS? 
+      AWS stands for Amazon web services and it is a fundamental cloud service used for cloud computing which offers a wide array of cloud-based products at a global scale
 ![image](https://user-images.githubusercontent.com/68451169/153737463-07b67189-4ebf-48c1-94a8-a78ab0022f9c.png)
 
 #### IAM
@@ -90,7 +93,7 @@ that displays my name, and has links to 5 other pages, one of which includes som
 <!-- Instructions -->
 ## Instructions
 ### S3
-WHAT is S3:
+What is S3?
 Amazon S3 allows the storage of objects (files) in forms of buckets.
 Buckets must have a name that is globally unique are defined at the region level.
 The Naming convention requires the following: No uppercase, No underscore, 3-63 characters long, Not an IP.
@@ -110,7 +113,8 @@ The Naming convention requires the following: No uppercase, No underscore, 3-63 
 2. dfghgfhg
 3. ffhfgh
 4. 
-### CloudFront   
+### CloudFront  
+What is CloudFront?
     
 
    
