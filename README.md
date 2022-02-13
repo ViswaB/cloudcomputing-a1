@@ -24,6 +24,8 @@
 </details>
 
 ## Project Link
+http://d2515v51pc8j0d.cloudfront.net/
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
