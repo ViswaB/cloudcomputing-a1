@@ -2,7 +2,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <a href="#project-link">Project Link</a>
+    <li><a href="#project-link">Project Link</a></li>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
